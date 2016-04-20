@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Connect Bluetooth"
+            android:id="@+id/connectbtn"
+            android:textSize="@dimen/my_textsize" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="not connected"
+            android:id="@+id/bluetoothstatus"
+            android:textSize="@dimen/my_textsize"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="20dp" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Property"
+            android:textSize="@dimen/my_textsize"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="20dp" />
+        <TextView
+            android:layout_width="@dimen/distance1"
+            android:layout_height="match_parent"
+            android:id="@+id/property"
+            android:textSize="@dimen/my_textsize"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="20dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bluetooth Send"
+            android:id="@+id/sendblebtn"
+            android:textSize="@dimen/my_textsize"
+            android:layout_marginRight="1dp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contactor"
+            android:id="@+id/namebtn"    />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:inputType="textPersonName"
+            android:text="Name"
+            android:ems="10"
+            android:id="@+id/contactor"
+            android:gravity="center"
+            android:textSize="@dimen/my_textsize" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text=" meanwhile send msg "
+            android:id="@+id/checkMessage"
+            android:checked="false" />
+
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/input_edit_height"
+        android:hint="输入发送的内容"
+        android:id="@+id/messageinfo"
+        android:singleLine="false"
+        android:maxLines="10"
+        android:gravity="top" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/savemeaasge"
+        android:layout_gravity="right"
+        android:text="编辑" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/distance2"
+        android:text="Location:"
+        android:textSize="@dimen/my_textsize" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="my location"
+        android:id="@+id/location" />
+
+</LinearLayout>

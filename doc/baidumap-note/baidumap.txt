@@ -1,0 +1,28 @@
+http://developer.baidu.com/map/wiki/index.php?title=uri/api/android#.E6.A0.87.E6.B3.A8
+
+
+
+intent://map/marker //Android服务地址（基于Android SDK应用开发） bdapp://map/marker //Android服务地址（基于浏览器端应用开发）
+参数说明
+参数名称	width="150"参数说明	width="200"是否必选	width="80"备注
+location	lat <纬度> ,lng <经度>	必选	
+title	标注点显示标题	必选	
+content	标注点显示内容	必选	
+coord_type	坐标类型，可选参数，默认为百度经纬度坐标。	可选	默认为bd09经纬度坐标。允许的值为bd09ll、bd09mc、gcj02、wgs84。bd09ll表示百度经纬度坐标，gcj02表示经过国测局加密的坐标，wgs84表示gps获取的坐标。
+zoom	展现地图的级别，默认为视觉最优级别。	可选	
+src	appName。	必选	此参数不传值，不保证服务。
+
+代码片段
+//移动APP调起Android度地图方式举例
+intent = Intent.getIntent("intent://map/marker?location=40.047669,116.313082&title=我的位置&content=百度奎科大厦&src=yourCompanyName|yourAppName#Intent;scheme=bdapp;package=com.baidu.BaiduMap;end");
+startActivity(intent); //启动调用 
+ 
+//网页应用调起Android百度地图方式举例
+<a href="bdapp://map/marker?location=40.047669,116.313082&title=我的位置&content=百度奎科大厦&src=yourCompany
+
+
+http://developer.baidu.com/map/uri-intro.htm#idmykey31
+
+
+
+http://api.map.baidu.com/marker?location=40.047669,116.313082&title=我的位置&content=百度奎科大厦&output=html&src=yourComponyName|yourAppName    //调起百度PC或web地图，且在（lat:39.916979519873，lng:116.41004950566）坐标点上显示名称"我的位置"，内容"百度奎科大厦"的信息窗口。

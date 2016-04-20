@@ -1,0 +1,1 @@
+include ':app', ':phonecall', ':baidu', ':test', ':bluetoothapp', ':permission'
